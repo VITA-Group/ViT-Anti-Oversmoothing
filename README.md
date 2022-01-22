@@ -28,7 +28,7 @@ Our experiments demonstrate our proposed methods consistently help ViT benefit f
 First of all, clone our repository locally:
 
 ```
-git clone https://github.com/VITA-Group/Fourier-ViT.git
+git clone https://github.com/VITA-Group/ViT-Anti-Oversmoothing.git
 ```
 
 Then, install the following Python libraries which are required to run our code:
