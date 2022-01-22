@@ -28,7 +28,7 @@ Our experiments demonstrate our proposed methods consistently help ViT benefit f
 First of all, clone our repository locally:
 
 ```
-git clone
+git clone https://github.com/VITA-Group/Deep-Oversmoothing-ViT.git
 ```
 
 Then, install the following Python libraries which are required to run our code:
