@@ -1,8 +1,8 @@
-# Taming Over-Smoothing in Deep Vision Transformers via the Fourier Domain Analysis
+# Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-The official implementation of ICLR 2022 paper [Taming Over-Smoothing in Deep Vision Transformers via the Fourier Domain Analysis](https://openreview.net/forum?id=O476oWmiNNp).
+The official implementation of ICLR 2022 paper [Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis](https://openreview.net/forum?id=O476oWmiNNp).
 
 Peihao Wang, Wenqing Zheng, Tianlong Chen, Zhangyang (Atlas) Wang
 
@@ -190,8 +190,8 @@ Coming soon.
 If you find this work or our code implementation helpful for your own resarch or work, please cite our paper.
 ```
 @inproceedings{
-wang2022taming,
-title={Taming Over-Smoothing in Deep Vision Transformers via the Fourier Domain Analysis},
+wang2022antioversmooth,
+title={Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis},
 author={Wang, Peihao and Zheng, Wenqing and Chen, Tianlong and Wang, Zhangyang},
 booktitle={International Conference on Learning Representations},
 year={2022},
