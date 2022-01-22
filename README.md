@@ -192,7 +192,7 @@ If you find this work or our code implementation helpful for your own resarch or
 @inproceedings{
 wang2022taming,
 title={Taming Over-Smoothing in Deep Vision Transformers via the Fourier Domain Analysis},
-author={Peihao Wang and Wenqing Zheng and Tianlong Chen and Zhangyang Wang},
+author={Wang, Peihao and Zheng, Wenqing and Chen, Tianlong and Wang, Zhangyang},
 booktitle={International Conference on Learning Representations},
 year={2022},
 url={https://openreview.net/forum?id=O476oWmiNNp},
