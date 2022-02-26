@@ -1,4 +1,4 @@
-# Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis
+# Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis: From Theory to Practice
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
