@@ -190,7 +190,7 @@ Coming soon.
 If you find this work or our code implementation helpful for your own resarch or work, please cite our paper.
 ```
 @inproceedings{wang2022antioversmooth,
-title={Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis},
+title={Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis: From Theory to Practice},
 author={Wang, Peihao and Zheng, Wenqing and Chen, Tianlong and Wang, Zhangyang},
 booktitle={International Conference on Learning Representations},
 year={2022},
