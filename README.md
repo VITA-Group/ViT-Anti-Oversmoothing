@@ -182,7 +182,14 @@ main.py --auto_reload --model featscale_cait_S24_224 --batch-size 128 \
 
 ### Pre-trained Models
 
-Coming soon.
+Our pre-trained model parameters can be downloaded from [Google Drive](https://drive.google.com/file/d/1QUO4v-tQpwNpq2BuZjqOawvkfv8IGWCS/view?usp=sharing). To evaluate on our pre-trained models, please specify flag `--eval` and `--resume` to the path to the checkpoints. For example, to reproduce our results of `DeiT-S + AttnScale`, one can run the following command:
+```
+python -m torch.distributed.launch --nproc_per_node=2 --master_port 29701 --use_env \
+main.py --model attnscale_small_12 --batch-size 256 --drop 0.2 \
+--data-path </data_path> --data-set IMNET --input-size 224 \
+--output_dir ./logs/imnet1k_attnscale_small_12 \
+--eval --resume </ckpt_dir>/attnscale_small_12.pth
+```
 
 
 ## Citation
