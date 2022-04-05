@@ -52,7 +52,7 @@ class Block(nn.Module):
         x_h = x_h * self.lamb2
         x_attn = x_attn + x_d + x_h
 
-        x = x + self.drop_path(x_attn)
+        x = x + self.drop_path(x_attn + x_d + x_h)
         x = x + self.drop_path(self.mlp(self.norm2(x)))
         return x
 
