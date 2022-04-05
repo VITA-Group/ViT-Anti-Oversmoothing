@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-The official implementation of ICLR 2022 paper [Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis](https://openreview.net/forum?id=O476oWmiNNp).
+The official implementation of ICLR 2022 paper [Anti-Oversmoothing in Deep Vision Transformers via the Fourier Domain Analysis: From Theory to Practice](https://openreview.net/forum?id=O476oWmiNNp).
 
 Peihao Wang, Wenqing Zheng, Tianlong Chen, Zhangyang (Atlas) Wang
 
@@ -10,14 +10,7 @@ This repository is build based on DeiT and CaiT [official repository](https://gi
 
 ## Introduction
 
-Vision Transformer (ViT) has recently demonstrated promise in computer vision problems.
-However, unlike Convolutional Neural Networks (CNN), it is known that the performance of ViT saturates quickly with depth increasing, due to the observed attention collapse or patch uniformity. Despite a couple of empirical solutions, a rigorous framework studying on this scalability issue remains elusive. 
-In this paper, we first establish an analytic framework to investigate ViT from the spectrum domain. We show that the self-attention mechanism inherently amounts to a low-pass filter, which indicates when ViT scales up its depth, excessive low-pass filtering will cause feature maps to only preserve their Direct-Current (DC) component.
-We then propose two straightforward yet effective techniques to mitigate the undesirable low-pass limitation.
-The first technique, termed *AttnScale*, decomposes a self-attention block into low-pass and high-pass components, then rescales and combines these two filters to produce an all-pass self-attention matrix.
-The second technique, termed *FeatScale*, re-weights feature maps on separate frequency bands to amplify the high-frequency signals.
-Both techniques are efficient, hyperparameter-free, and can effectively avoid attention collapse and patch uniformity caused by low-pass filtering.
-Our experiments demonstrate our proposed methods consistently help ViT benefit from deeper architectures, bringing > 1.0% performance gain with little parameter overhead. In addition to the baseline model, our techniques are also successfully applied to ViT variants.
+Vision Transformer (ViT) has recently demonstrated promise in computer vision problems. However, unlike Convolutional Neural Networks (CNN), it is known that the performance of ViT saturates quickly with depth increasing, due to the observed attention collapse or patch uniformity. Despite a couple of empirical solutions, a rigorous framework studying on this scalability issue remains elusive. In this paper, we first establish a  rigorous theory framework to analyze ViT features from the Fourier spectrum domain. We show that the self-attention mechanism inherently amounts to a low-pass filter, which indicates when ViT scales up its depth, excessive low-pass filtering will cause feature maps to only preserve their Direct-Current (DC) component. We then propose two straightforward yet effective techniques to mitigate the undesirable low-pass limitation. The first technique, termed AttnScale, decomposes a self-attention block into low-pass and high-pass components, then rescales and combines these two filters to produce an all-pass self-attention matrix. The second technique, termed FeatScale, re-weights feature maps on separate frequency bands to amplify the high-frequency signals. Both techniques are efficient and hyperparameter-free, while effectively overcoming relevant ViT training artifacts such as attention collapse and patch uniformity. By seamlessly plugging in our techniques to multiple ViT variants, we demonstrate that they consistently help ViTs benefit from deeper architectures, bringing up to 1.1% performance gains "for free" (e.g., with little parameter overhead).
 
 ![](figures/teaser.png)
 
