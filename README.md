@@ -6,7 +6,7 @@ The official implementation of ICLR 2022 paper [Anti-Oversmoothing in Deep Visio
 
 Peihao Wang, Wenqing Zheng, Tianlong Chen, Zhangyang (Atlas) Wang
 
-This repository is build based on DeiT and CaiT [official repository](https://github.com/facebookresearch/deit).
+This repository is built based on DeiT and CaiT [official repository](https://github.com/facebookresearch/deit).
 
 ## Introduction
 
@@ -175,7 +175,7 @@ main.py --auto_reload --model featscale_cait_S24_224 --batch-size 128 \
 
 ### Pre-trained Models
 
-Our pre-trained model parameters can be downloaded from [Google Drive](https://drive.google.com/file/d/1QUO4v-tQpwNpq2BuZjqOawvkfv8IGWCS/view?usp=sharing). To evaluate on our pre-trained models, please specify flag `--eval` and `--resume` to the path to the checkpoints. For example, to reproduce our results of `DeiT-S + AttnScale`, one can run the following command:
+Our pre-trained model parameters can be downloaded from [HuggingFace Hub](https://huggingface.co/peihaowang/vit-anti-oversmoothing/tree/main). To evaluate our pre-trained models, please specify flags `--eval` and `--resume` to the path to the checkpoints. For example, to reproduce our results of `DeiT-S + AttnScale`, one can run the following command:
 ```
 python -m torch.distributed.launch --nproc_per_node=2 --master_port 29701 --use_env \
 main.py --model attnscale_small_12 --batch-size 256 --drop 0.2 \
