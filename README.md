@@ -175,7 +175,7 @@ main.py --auto_reload --model featscale_cait_S24_224 --batch-size 128 \
 
 ### Pre-trained Models
 
-Our pre-trained model parameters can be downloaded from [HuggingFace Hub](https://huggingface.co/peihaowang/vit-anti-oversmoothing/tree/main). To evaluate our pre-trained models, please specify flags `--eval` and `--resume` to the path to the checkpoints. For example, to reproduce our results of `DeiT-S + AttnScale`, one can run the following command:
+Our pre-trained model parameters can be downloaded from [HuggingFace Hub](https://huggingface.co/peihaowang/vit-anti-oversmoothing). To evaluate our pre-trained models, please specify flags `--eval` and `--resume` to the path to the checkpoints. For example, to reproduce our results of `DeiT-S + AttnScale`, one can run the following command:
 ```
 python -m torch.distributed.launch --nproc_per_node=2 --master_port 29701 --use_env \
 main.py --model attnscale_small_12 --batch-size 256 --drop 0.2 \
